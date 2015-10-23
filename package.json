@@ -1,0 +1,24 @@
+{
+  "name": "node-etherdream",
+  "version": "0.0.1",
+  "author": "Matthew Stone <matthew.d.stone@gmail.com>",
+  "description": "EtherDream Laser DAC client for Node.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/robot-head/node-etherdream.git"
+  },
+  "homepage": "http://github.com/robot-head/node-etherdream-qt",
+  "main": "./lib/etherdream.js",
+  "keywords": [
+    "laser",
+    "etherdream"
+  ],
+  "engines": {
+    "node": ">=0.6.14"
+  },
+  "scripts": {
+    "install": "node-gyp rebuild"
+  },
+  "devDependencies": {},
+  "optionalDependencies": {}
+}
