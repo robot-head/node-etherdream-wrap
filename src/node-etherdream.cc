@@ -1,7 +1,8 @@
 // node-etherdream.cc
 #include <node.h>
+#include <etherdream.h>
 
-namespace etherdream {
+namespace nodeetherdream {
 
 using v8::FunctionCallbackInfo;
 using v8::Isolate;
@@ -21,4 +22,4 @@ void init(Local<Object> exports) {
 
 NODE_MODULE(etherdream, init)
 
-}  // namespace etherdream
+}  // namespace nodeetherdream
