@@ -1,3 +1,3 @@
-[submodule "j4cDAC"]
-	path = j4cDAC
+[submodule "deps/j4cDAC"]
+	path = deps/j4cDAC
 	url = https://github.com/j4cbo/j4cDAC/
