@@ -17,12 +17,16 @@ void Method(const FunctionCallbackInfo<Value>& args) {
 }
 
 void EtherdreamLibStart(const FunctionCallbackInfo<Value>& args) {
-  //Isolate* isolate = args.GetIsolate();
-  etherdream_lib_start();
+  args.GetReturnValue().Set(etherdream_lib_start());
+}
+
+void EtherdreamDacCount(const FunctionCallbackInfo<Value>& args) {
+  args.GetReturnValue().Set(etherdream_dac_count());
 }
 
 void init(Local<Object> exports) {
   NODE_SET_METHOD(exports, "etherdream_lib_start", EtherdreamLibStart);
+  NODE_SET_METHOD(exports, "etherdream_dac_count", EtherdreamDacCount);
 }
 
 NODE_MODULE(etherdream, init)
