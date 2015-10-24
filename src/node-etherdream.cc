@@ -16,8 +16,13 @@ void Method(const FunctionCallbackInfo<Value>& args) {
   args.GetReturnValue().Set(String::NewFromUtf8(isolate, "world"));
 }
 
+void EtherdreamLibStart(const FunctionCallbackInfo<Value>& args) {
+  //Isolate* isolate = args.GetIsolate();
+  etherdream_lib_start();
+}
+
 void init(Local<Object> exports) {
-  NODE_SET_METHOD(exports, "hello", Method);
+  NODE_SET_METHOD(exports, "etherdream_lib_start", EtherdreamLibStart);
 }
 
 NODE_MODULE(etherdream, init)
